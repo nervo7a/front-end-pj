@@ -1,0 +1,243 @@
+                                                         <!-- PROGETTO DI SOMMINISTRAZIONE DI CLAUDIA CAVALIERE, marzo 2026
+                                                          Nomi e informazioni contenute nella pagina sono di esempio
+                                                          così come le fotografie utilizzate. -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Progetto di Somministrazione</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="progetto.css"/>
+</head>
+<body>
+
+<!-- menù -->
+<nav id="navbar">
+  <a href="#" class="logo">im<span>Perfetto.</span></a>
+  <div class="nav-right">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#collane">Collane</a></li>
+      <li><a href="#anelli">Anelli</a></li>
+      <li><a href="#bracciali">Bracciali</a></li>
+      <li><a href="#prodotti">Tutti i prodotti</a></li>
+    </ul>
+    <div class="search-box">
+      <input type="text" placeholder="Cerca..." id="search-input">
+    </div>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- carosello -->
+<section id="carosello">
+
+  <div class="slide attivo">
+    <div class="slide-bg"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <span class="etichetta">Benvenuto.</span>
+      <h1>L'arte del dettaglio <br/> <i>imPerfetto</i>.</h1>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="slide-bg"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <h1>Ricercati e... autentici.<br/></h1>
+      <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto magni architecto optio nemo quae pariatur temporibus perspiciatis porro facere.</strong></p>
+      <a href="#materiali" class="btn-primario">Scopri i materiali</a>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="slide-bg"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <h1>Commissiona un gioiello: indossa la tua personalità.</h1>
+      <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum aperiam incidunt dolorum consectetur nobis corrupti natus dicta eos quidem?</strong></p>
+      <a href="#contatto" class="btn-primario">Compila il form</a>
+    </div>
+  </div>
+
+  <button class="carousel-freccia prima" id="prima" aria-label="Precedente">&#8592;</button>
+  <button class="carousel-freccia dopo" id="dopo" aria-label="Successivo">&#8594;</button>
+
+  <div class="carousel-controls">
+    <button class="dot attivo" data-idx="0"></button>
+    <button class="dot" data-idx="1"></button>
+    <button class="dot" data-idx="2"></button>
+  </div>
+</section>
+
+<!-- storia, valori, catalogo, italianità -->
+<article>
+<!-- storia del brand -->
+<section class="sezione sezione-intro" id="storia">
+  <div class="sezione-griglia">
+    <div class="sezione-img-box rivela">
+      <img src="https://images.pexels.com/photos/5116272/pexels-photo-5116272.jpeg" alt="gioiellirand" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+    </div>
+    <div class="sezione-testo rivela">
+      <span class="sezione-tag">La nostra storia</span>
+      <h2>Un percorso perfettamente... <br/><i>imPerfetto!</i></h2>
+      <div class="linea-decorativa"></div>
+      <p><strong>imPerfetto</strong> nasce dalle mani di Claudia Lorem, artigiana napoletana che ha scelto di seguire la passione dopo anni di lavoro in un ambiente in cui non si è mai riconosciuta davvero.</p>
+      <p>Ogni gioiello è un'opera d'arte unica, realizzata con cura e attenzione ai dettagli: <i>perfetto nella sua imperfezione</i>. </br> Il nostro obiettivo è quello di fondere tradizione, innovazione e bellezza.</p>
+      <a href="#valori" class="btn-primario" style="color:var(--marrone);border-color:var(--marrone);">Scopri la nostra storia</a>
+    </div>
+  </div>
+</section>
+</article>
+
+<article>
+<!-- valori del brand -->
+<section class="sezione sezione-scura" id="valori">
+  <div style="max-width:700px;margin:0 auto;text-align:center;">
+    <div class="sezione-testo rivela">
+      <span class="sezione-tag">I nostri valori</span>
+      <h2>Creiamo gioielli per<br/> meravigliare.</h2>
+      <div class="linea-decorativa" style="margin:1.6rem auto;"></div>
+      <p>Qui da <i>imPerfetto</i> la tua bellezza è una priorità. </br> Come artigiani orafi ci impegniamo a creare pezzi che non solo risplendano ma che raccontino una storia:</br><i>la tua</i>.</p>
+    </div>
+  </div>
+</section>
+</article>
+
+<article>
+<!-- cat. prodotti -->
+<section class="sezione sezione-chiara" id="prodotti">
+  <div class="sezione-intestazione rivela">
+    <span class="sezione-tag">Quello che cerchi è qui...</span>
+    <h2>Scopri il catalogo.</h2>
+    <p>Clicca sulle sezioni per visualizzare i gioielli per categoria.</p>
+  </div>
+  <div class="cards-griglia">
+    <div class="card rivela">
+      <h3>Collane e girocollo</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quas!</p>
+    </div>
+    <div class="card rivela" style="transition-delay:.12s">
+      <h3>Anelli e fedine</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ducimus.</p>
+    </div>
+    <div class="card rivela" style="transition-delay:.24s">
+      <h3>Bracciali e Bangler</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, obcaecati?</p>
+    </div>
+    <div class="card rivela" style="transition-delay:.24s">
+      <h3>Orecchini ed Ear cuffs</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, saepe.</p>
+    </div>
+  </div>
+</section>
+</article>
+
+<article>
+<!--qualità italiana -->
+<section class="sezione sezione-intro" id="italiana">
+  <div class="sezione-griglia">
+    <div class="sezione-testo rivela">
+      <span class="sezione-tag">Territorio e identità</span>
+      <h2>Cuore italiano, anima perfettamente <i>imPerfetta</i>.</h2>
+      <div class="linea-decorativa"></div>
+      <p>L'Italia è linfa vitale della nostra identità:</br> i nostri gioielli traggono ispirazione da tradizioni orafe italiane centenarie.</p>
+    </div>
+    <div class="sezione-img-box rivela">
+      <img src="https://images.pexels.com/photos/31094159/pexels-photo-31094159.jpeg" alt="Territorio italiano" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+    </div>
+  </div>
+</section>
+</article>
+
+<!-- form contatti-->
+<section id="contatto">
+  <div class="form-wrapper">
+    <div class="form-intestazione rivela">
+      <span class="sezione-tag" style="display:block;margin-bottom:.6rem;">Hai una richiesta?</span>
+      <h2>Scrivici.</h2>
+      <p>Compila il modulo qui sotto per richiedere un gioiello personalizzato o ricevere informazioni sui costi o sui materiali.</p>
+    </div>
+
+    <div id="messaggioSuccesso" class="form-success">
+      <h3>Grazie!</h3>
+      <p>Il tuo messaggio è stato inviato con successo. Ti contatteremo presto!</p>
+    </div>
+
+    <form id="modulo" novalidate>
+      <div class="griglia-campi">
+
+        <div class="campo">
+          <label for="nome">Nome *</label>
+          <input type="text" id="nome" name="nome" autocomplete="given-name"/>
+          <span class="campo-sottoline"></span>
+          <span class="msg-errore" id="err-nome"></span>
+        </div>
+
+        <div class="campo">
+          <label for="cognome">Cognome *</label>
+          <input type="text" id="cognome" name="cognome" autocomplete="family-name"/>
+          <span class="campo-sottoline"></span>
+          <span class="msg-errore" id="err-cognome"></span>
+        </div>
+
+        <div class="campo">
+          <label for="dataNascita">Data di nascita *</label>
+          <input type="date" id="dataNascita" name="dataNascita" autocomplete="bday"/>
+          <span class="campo-sottoline"></span>
+          <span class="msg-errore" id="err-dataNascita"></span>
+        </div>
+
+        <div class="campo">
+          <label for="residenza">Residenza *</label>
+          <div class="select-wrapper">
+            <select id="residenza" name="residenza" autocomplete="address-level1">
+              <option value="">— Seleziona regione —</option>
+              <option>Abruzzo</option><option>Basilicata</option><option>Calabria</option>
+              <option>Campania</option><option>Emilia-Romagna</option><option>Friuli-Venezia Giulia</option>
+              <option>Lazio</option><option>Liguria</option><option>Lombardia</option>
+              <option>Marche</option><option>Molise</option><option>Piemonte</option>
+              <option>Puglia</option><option>Sardegna</option><option>Sicilia</option>
+              <option>Toscana</option><option>Trentino-Alto Adige</option><option>Umbria</option>
+              <option>Valle d'Aosta</option><option>Veneto</option><option>Estero</option>
+            </select>
+          </div>
+          <span class="campo-sottoline"></span>
+          <span class="msg-errore" id="err-residenza"></span>
+        </div>
+
+        <div class="campo">
+          <label for="numero">Numero di cellulare *</label>
+          <input type="text" id="numero" name="numero" autocomplete="phone-number"/>
+          <span class="campo-sottoline"></span>
+          <span class="msg-errore" id="err-numero"></span>
+        </div>
+
+        <div class="campo campo-intero">
+          <label for="messaggio">Lascia un messaggio *</label>
+          <textarea id="messaggio" name="messaggio" placeholder="Scrivi qui il tuo messaggio…" rows="5"></textarea>
+          <span class="campo-sottoline"></span>
+          <span class="msg-errore" id="err-messaggio"></span>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;">
+        <button type="submit" class="btn-invia">Invia</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <p>&copy; 2026 <a href="#">imPerfetto</a> — Tutti i diritti riservati</p>
+</footer>
+
+<script src="progetto.js"></script>
+</body>
+</html>
