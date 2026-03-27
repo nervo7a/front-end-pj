@@ -564,5 +564,5 @@ footer a { color: var(--violascuro); text-decoration: none; }
   .nav-links.aperto { transform: translateY(0); }
   .nav-links li a { display: block; padding: .9rem 4vw; }
   .hamburger { display: flex; }
-  .search-box { display: none; }
+  .search-box { display: block; }
 }
